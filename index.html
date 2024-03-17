@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-pink-100">
+
+    <!-- Header Section -->
+    <header class="bg-pink-500 text-white py-4">
+        <div class="container">
+            <div class="container flex justify-center items-center">
+                <h1 class="text-3xl font-bold text-center ">Beauty Products</h1>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+           
+            <nav class ="container mx-auto flex justify-end">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Blog</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="py-12 flex gap-4 w-full">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  flex-auto ">
+            <!-- Featured Post 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="makeup.jfif" alt="Featured Post Image" class="w-full h-64 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Make UP</h2>
+                    <p class="text-gray-700">Must-Haves Make up Products</p>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 flex-auto">
+            <!-- Featured Post 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="skin.jfif" alt="Featured Post Image" class="w-full h-64 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Skin</h2>
+                    <p class="text-gray-700">Must-Haves Skin Products</p>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  flex-auto">
+            <!-- Featured Post 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="Fragrance.jfif" alt="Featured Post Image" class="w-full h-64 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Fragrance</h2>
+                    <p class="text-gray-700">Must-Haves Fragrance Products</p>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="py-8 bg-pink-200">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Categories</h2>
+            <div class="flex items-center flex-col ">
+                <div>
+                    <span class=" w-200 bg-purple-500 text-white rounded-full flex-grow">New Arrivals</span>
+                    <img src="new.png" alt="Featured Post Image" class="w-200 h-64 object-cover object-center">
+                </div>
+               <div>
+                <span class=" w-200 bg-purple-500 text-white  rounded-full flex-grow">On Sale</span>
+                <img src="sale.jfif" alt="Featured Post Image" class="w-200 h-64 object-cover object-center">
+               </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Recent Posts</h2>
+            <ul class="space-y-4">
+                <li>
+                    <a href="#" class="text-lg font-medium hover:text-pink-500">Recent Post 1</a>
+                    <p class="text-gray-600">We have a new line of lip gloss</p>
+                    <span class="inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Shop from here</span>
+                    
+                </li>
+                <li>
+                    <a href="#" class="text-lg font-medium hover:text-pink-500">Recent Post 2</a>
+                    <p class="text-gray-600">Publication Date</p>
+                    <span class="inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Shop from here</span>
+                </li>
+                <!-- Add more recent posts as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Form -->
+    <section class="py-8 bg-pink-200">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+            <form>
+                <div class="flex items-center">
+                    <input type="email" class="w-full bg-white border border-gray-300 rounded py-2 px-4 focus:outline-none focus:border-blue-500" placeholder="Enter your email">
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded ml-2 hover:bg-blue-600">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-900 text-white py-8">
+        <div class="container mx-auto flex items-center justify-between">
+            <div>
+                <h3 class="text-xl font-bold">Follow Us</h3>
+                <ul class="flex space-x-4 mt-4">
+                    <li><a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="hover:text-blue-500"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <p>&copy; 2024 Online Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
